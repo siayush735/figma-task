@@ -20,11 +20,11 @@ export default function Team() {
     const offset = i - index;
 
     const positions = {
-      "-2": { x: -300, y: 260, scale: 0.6, opacity: 0.2 },
-      "-1": { x: -220, y: 120, scale: 0.8, opacity: 0.5 },
+      "-2": { x: -420, y: 260, scale: 0.6, opacity: 0.2 },
+      "-1": { x: -320, y: 120, scale: 0.8, opacity: 0.5 },
       "0": { x: 0, y: 0, scale: 1, opacity: 1 },
-      "1": { x: 220, y: 120, scale: 0.8, opacity: 0.5 },
-      "2": { x: 300, y: 260, scale: 0.6, opacity: 0.2 },
+      "1": { x: 320, y: 120, scale: 0.8, opacity: 0.5 },
+      "2": { x: 420, y: 260, scale: 0.6, opacity: 0.2 },
     }
 
     return positions[offset] || { opacity: 0 };
@@ -32,6 +32,13 @@ export default function Team() {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden">
+
+<div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+  <div className="w-[1200px] h-[600px] rounded-[50%] 
+    border border-white/10 
+    bg-[radial-gradient(ellipse_at_center,_rgba(59,130,246,0.15),_transparent_70%)]
+  " />
+</div>
 
       <h2 className="text-4xl mb-16 text-white">
         Meet Our Starclinch Squads
@@ -85,11 +92,11 @@ export default function Team() {
           5 Members
         </p>
 
-        <h1 className="text-3xl text-white mt-4">
+        <h1 className="text-4xl text-white mt-4">
           Design Dynamos
         </h1>
 
-        <p className="text-gray-400 max-w-lg mx-auto mt-4">
+        <p className="text-gray-400 max-w-lg text-2xl mx-auto mt-4">
           The artists behind the visuals. These design superheroes bring ideas to life.
         </p>
 
