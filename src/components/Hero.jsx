@@ -64,7 +64,7 @@ export default function Hero() {
             key={i}
             className={`absolute bg-gray-500 px-7 py-3 rounded-2xl transition-all duration-500
             ${tag.left} ${tag.rotate}
-            ${target ? "top-[310px] opacity-25" : "top-[370px] opacity-100"}`}
+            ${target ? "top-[310px] opacity-100" : "top-[370px] opacity-20"}`}
           >
             {tag.text}
           </p>
